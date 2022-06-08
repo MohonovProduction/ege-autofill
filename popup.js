@@ -14,13 +14,6 @@ chrome.storage.local.get(['lastName', 'series', 'number'])
     })
     .catch(err => console.log(err))
 
-// if (chrome.storage.local.get(['lastName'])[0] !== undefined) {
-//     const data = chrome.storage.local.get(['lastName', 'series', 'number'])
-//     ex_lastName.value = data.lastName
-//     ex_series.value = data.series
-//     ex_number.value = data.number
-// }
-
 ex_saveData.addEventListener('click', async () => {
     chrome.storage.local.set({
         lastName: ex_lastName.value,
@@ -31,7 +24,7 @@ ex_saveData.addEventListener('click', async () => {
 
 ex_fillData.addEventListener('click', async () => {
     let [tab] = await chrome.tabs.query({ active: true, currentWindow: true })
-    console.log(tab.id)
+    console.log(tab)
 
     chrome.scripting.executeScript({
         target: { tabId: tab.id },
@@ -43,4 +36,13 @@ function fill() {
     const lastName = document.querySelector('#pLastName')
     const series = document.querySelector('#Series')
     const number = document.querySelector('#Number')
+
+    chrome.storage.local.get(['lastName', 'series', 'number'])
+        .then(data => {
+            console.log(data)
+            lastName.value = data.lastName
+            series.value = data.series
+            number.value = data.number
+        })
+        .catch(err => console.log(err))
 }
