@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Ege Autofill",
   "description": "Автоматическая подстановка полей на сайте ege.spb.ru",
-  "version": "1.0.0",
+  "version": "1.0.1",
 
   "action": {
     "default_icon": {
