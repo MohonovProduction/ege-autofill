@@ -10,7 +10,8 @@
       "32": "/images/get_started32.png",
       "48": "/images/get_started48.png",
       "128": "/images/get_started128.png"
-    }
+    },
+    "default_popup": "popup.html"
   },
   "icons": {
     "16": "/images/get_started16.png",
@@ -19,7 +20,11 @@
     "128": "/images/get_started128.png"
   },
 
-  "permissions": ["activeTab", "scripting"],
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "https://www.ege.spb.ru/result/"
+  ]
 
-  "default_popup": "popup.html"
 }

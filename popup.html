@@ -4,16 +4,70 @@
     <meta charset="UTF-8">
     <title>EGE Autofill 3000</title>
     <style>
-
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            border-radius: 2rem;
+        }
+        .container {
+            padding: 3em;
+            background-color: #313131;
+            color: #959595;
+        }
+        .heading {
+            font-family: sans-serif;
+            color: #fff;
+        }
+        input {
+            padding: .4rem;
+            background-color: #454545;
+            color:  #959595;
+            border: none;
+            border-radius: 1rem;
+            margin: .3rem 0;
+        }
+        .button, .button-primary {
+            width: 100%;
+            padding: .3rem;
+            margin: .5rem 0;
+            border: none;
+            outline: none;
+            border-radius: .3rem;
+            color: #fff;
+            transform: scale(1);
+            transition: .3s ease-in-out;
+        }
+        .button:hover, .button-primary:hover {
+            transform: scale(1.2);
+        }
+        .button {
+            background-color: #1c1c1c;
+        }
+        .button-primary {
+            background-color: #175ab4;
+        }
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: #959595;
+            display: block;
+            margin: .5rem 0;
+        }
     </style>
 </head>
 <body>
-    <article>
-        <h1>Введите данные для автозаполнения</h1>
-        <a>Почему это безопасно?</a>
-        <input>
-        <input>
-        <input>
+    <article class="container">
+        <h1 class="heading">Введите данные для автозаполнения</h1>
+        <a href="https://github.com/MohonovProduction/ege-autofill">Почему это безопасно?</a>
+        <input id="ex_lastName" placeholder="Фамилия" required>
+        <input id="ex_series" placeholder="серия паспорта" required>
+        <input id="ex_number" placeholder="номер паспорта" required>
+        <button id="ex_saveData" class="button">Сохранить</button>
+        <button id="ex_fillData" class="button-primary">Заполнить</button>
     </article>
+    <script src="popup.js"></script>
 </body>
 </html>
