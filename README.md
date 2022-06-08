@@ -1,14 +1,10 @@
-<<<<<<< HEAD
 # EGE Autofill
+This is a simple autofill script for your data on ege.spb.ru
 <div style="display: flex; align-items: center">
 <p>This simple script for autofill your data on ege.spb.ru/result/</p> 
 <img alt="exemple of extension view" style="border-radius: .5rem; margin-left: 2rem" src="C:\Users\Mihail\Documents\code\extensions\ege_autofill\images\readme.png" title="cover" width="70%"/>
 </div>
 
-=======
-# ege-autofill
-This is a simple autofill script for your data on ege.spb.ru
->>>>>>> d06be6474de659ba36eb4fc67530b9543d6110b7
 ## Install
 1. download last [release](https://github.com/MohonovProduction/ege-autofill/releases)
 2. unpack zip archive
