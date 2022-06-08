@@ -2,7 +2,7 @@
 This is a simple autofill script for your data on ege.spb.ru
 <div style="display: flex; align-items: center">
 <p>This simple script for autofill your data on ege.spb.ru/result/</p> 
-<img alt="exemple of extension view" style="border-radius: .5rem; margin-left: 2rem" src="./images/readme_cover.png" title="cover" width="70%"/>
+<img alt="exemple of extension view" style="border-radius: .5rem; margin-left: 2rem" src="./images/readme_example.png" title="cover" width="70%"/>
 </div>
 
 ## Install
