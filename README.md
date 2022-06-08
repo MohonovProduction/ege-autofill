@@ -1,5 +1,5 @@
 # ege-autofill
-This simple script for autofill your data on ege.spb.ru/result/
+This is a simple autofill script for your data on ege.spb.ru
 ## Install
 - download last [release](https://github.com/MohonovProduction/ege-autofill/releases)
 - unpack zip archive
